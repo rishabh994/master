@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication15.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>OLX HomePage</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="stylesheet/StyleSheet1.css" /> 
+    <style type="text/css">
+        .form-control {
+            width: 489px;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="header">
+<div class="container-fluid">
+<div class="navbar-header">
+ <asp:HyperLink ID="HyperLink1" NavigateUrl="~/home.aspx" runat="server">
+                <asp:Image ImageUrl="Image/OLX_New_Logo.png" alt=""
+                    ID="logo" runat="server" />
+            </asp:HyperLink>
+<div class="col-xs-4">
+<div class="input-group">
+        <input type="text" class="form-control" placeholder="Search.."/>&nbsp;<br />
+        </div>
+</div>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:ImageButton ID="ImageButton1" runat="server" Height="32px" ImageUrl="~/search.jpg" style="margin-top: 30px; margin-left: 0px; background-color: #FFCC00" Width="38px" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="btn btn-info btn-lg">SELL<span class="glyphicon glyphicon-chevron-right"></span></p></a>
+</div>
+</div>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><strong>CATEGORIES</strong></p>
+      <p><a href="#">Electronics</a></p>
+      <p><a href="#">Mobiles & Accessories</a></p>
+      <p><a href="#">Cars</a></p>
+      <p><a href="#">Bikes</a></p>
+      <p><a href="#">Furniture</a></p>
+       
+        </div>
+  </div>
+    </div>
+    
+    <div class="footer">
+  <p>Footer Text</p>
+</div>
+    </form>
+</body>
+</html>
